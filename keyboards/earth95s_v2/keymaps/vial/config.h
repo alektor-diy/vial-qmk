@@ -1,0 +1,15 @@
+#pragma once
+#define VIAL_KEYBOARD_UID {0x7C, 0x18, 0xF1, 0xD7, 0x4E, 0x1B, 0xA2, 0xE2}
+
+#define SPLIT_HAND_PIN GP10
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
+
+#define VIAL_UNLOCK_COMBO_ROWS {0, 1}
+#define VIAL_UNLOCK_COMBO_COLS {0, 0}
+
+#define ENCODER_A_PINS { }
+#define ENCODER_B_PINS { }
+#define ENCODER_A_PINS_RIGHT {GP11}
+#define ENCODER_B_PINS_RIGHT {GP12}
+#define ENCODER_RESOLUTION 4
