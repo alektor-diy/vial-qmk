@@ -2,6 +2,8 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
 #include QMK_KEYBOARD_H
+#include "lib/pmw3610/pmw3610.h"
+#include "pointing_device.h"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
@@ -43,3 +45,10 @@ const uint16_t PROGMEM encoder_map[][NUM_ENCODERS][NUM_DIRECTIONS] = {
     [3] = { ENCODER_CCW_CW(KC_TRNS, KC_TRNS)  },
 };
 #endif
+
+report_mouse_t pointing_device_task_user(report_mouse_t mouse_report) {
+    int8_t tmp = mouse_report.x;
+    mouse_report.x = mouse_report.y;
+    mouse_report.y = tmp;
+    return mouse_report;
+}

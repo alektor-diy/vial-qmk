@@ -11,7 +11,8 @@
         "extrakey": true,
         "mousekey": true,
         "nkro": false,
-        "encoder": true
+        "encoder": true,
+        "pointing_device": true
     },
     "matrix_pins": {
         "cols": ["GP25", "GP24", "GP23", "GP22", "GP21", "GP20", "GP19", "GP18", "GP15", "GP9", "GP8", "GP7", "GP6", "GP5", "GP4"],

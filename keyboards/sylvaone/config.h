@@ -1,0 +1,19 @@
+// Copyright 2025 cormoran707
+// SPDX-License-Identifier: GPL-2.0-or-later
+#pragma once
+
+// #define POINTING_DEVICE_CS_PIN NO_PIN
+#define POINTING_DEVICE_CS_PIN GP12
+#define POINTING_DEVICE_SCLK_PIN GP13
+#define POINTING_DEVICE_SDIO_PIN GP14
+// Not supported for split keyboard
+#define POINTING_DEVICE_MOTION_PIN GP11
+
+#define POINTING_DEVICE_MOTION_PIN_ACTIVE_LOW
+
+// #define POINTING_DEVICE_INVERT_X
+// #define POINTING_DEVICE_INVERT_Y
+
+// #define POINTING_DEVICE_AUTO_MOUSE_ENABLE
+
+// #define HOLD_ON_OTHER_KEY_PRESS
